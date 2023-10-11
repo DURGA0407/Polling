@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Admin Page</title>
+    <style>
+        *{text-decoration: none;font-size:20px;}
+        a{color:#fff;}
+        .navbar
+        {
+            width:100%;
+            background-color: #555;
+            overflow:auto;
+        }
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            width: 31.7%; 
+            text-align: center;
+        }
+        .navbar a:hover 
+        {
+            background-color: #000;
+        }
+
+        @media screen and (max-width: 500px)
+        {
+            .navbar a 
+            {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="newpage.html">Create Poll</a>
+        <a href="">Dashboard</a>
+        <a href="">Logout</a>
+    </div>
+
+    <?php 
+    session_start ();
+    if(!isset($_SESSION["login"]))
+    
+        header("location:login.php"); 
+    ?>
+</body>
