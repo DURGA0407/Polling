@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+body{
+    background-color:lightgray;
+    border:3px solid palevioletred;
+    border-radius: 16px;
+    box-shadow: 0 0 30px  palevioletred;
+    margin:50px;
+}
+.form-container
+{
+    padding:16px;
+}
+
+.from-date 
+{
+    padding:11px;
+    margin-left: 113px;
+    width:82.5%;
+    border-radius: 5px;
+    border-color: #f1f1f1;
+}
+.to-date
+{
+    padding:11px;
+    margin-left: 132px;
+    width:83%;
+    border-radius:5px;
+    border-color: #f1f1f1;
+}
+input[type="date"]:focus
+{
+    box-shadow: 0 0 10px #2e8bc4;
+    outline: none;
+}
+
+.img-upload
+{
+    margin-left: 113px;
+    background-color: lightgray;
+}
+input[type="submit"]
+{
+    border:3px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top:68px;
+    margin-left: 500px;
+    color:black;      
+}
+
+
